@@ -7,13 +7,13 @@ import { Videos, Loader } from "./";
 
 const SearchFeed = () => {
   const [videos, setVideos] = useState(null);
-  const { id } = useParams();
+  const { searchTerm } = useParams();
 
   useEffect(() => {
-    fetchFromAPI(`search?part=snippet&q=${id}`).then((data) =>
+    fetchFromAPI(`search?part=snippet&q=${searchTerm}`).then((data) =>
       setVideos(data.items)
     );
-  }, [id]);
+  }, [searchTerm]);
 
   if (!videos?.snippet) return <Loader />;
 
@@ -28,7 +28,7 @@ const SearchFeed = () => {
         ml={{ xs: "8px", sm: "40px" }}
       >
         Search Results for{" "}
-        <span style={{ color: "var(--color-gradient)" }}>{id}</span>
+        <span style={{ color: "var(--color-gradient)" }}>{searchTerm}</span>
       </Typography>
       <Box display="flex">
         <Box />
