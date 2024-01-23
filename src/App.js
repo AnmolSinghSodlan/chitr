@@ -56,7 +56,7 @@ const App = () => {
           <Route path="/" element={<Feed />} />
           <Route path="/video/:id" element={<VideoDetail />} />
           <Route path="/channel/:id" element={<ChannelDetail />} />
-          <Route path="/search/:id" element={<SearchFeed />} />
+          <Route path="/search/" element={<SearchFeed />} />
         </Routes>
       </Box>
     </BrowserRouter>
