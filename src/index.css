@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@700&display=swap");
+
+:root {
+  --color-text: #353536;
+  --color-gradient: #fe4c6c;
+  --color-border: rgba(0, 0, 0, 0.2);
+  --color-background-primary: #f6f6f6;
+  --color-background-secondary: rgba(255, 255, 255, 0.5);
+  --gradient-background: linear-gradient(90deg, #fb2891, #fe684d);
+  /* --color-border-dark: rgba(255, 255, 255, 0.15);
+  --color-background-dark: rgba(255, 255, 255, 0.08); */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.category-btn {
+  color: var(--color-text);
+}
+
+.category-btn:hover {
+  background: var(--gradient-background);
+  color: var(--color-background-primary);
+}
+
+.category-btn-icon {
+  margin-right: 15px;
+  color: var(--color-gradient);
+}
+
+.category-btn:hover .category-btn-icon {
+  color: var(--color-background-primary);
+}
+
+.react-player {
+  height: 71vh !important;
+  width: 100% !important;
+}
+
+.search-bar {
+  border: none;
+  outline: none;
+}
+
+.category-btn {
+  font-weight: bold;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+
+  padding: 7px 18px;
+  margin: 3px 0px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.logo {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.5rem;
+  background-image: url(/public/logo-text.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* .logo-text {
+  height: 2.2rem;
+  width: 6rem;
+  position: absolute;
+  left: 1.4rem;
+  top: 0.8rem;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo-text-light {
+  background-image: url("/public/logo-light.png");
+}
+
+.logo-text-dark {
+  background-image: url("/public/logo-dark.png");
+} */
+
+.mode {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-background-secondary);
+}
+
+.mode-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.4s ease;
+}
+
+.mode-icon-dark {
+  background-image: url("/public/dark-mode.svg");
+}
+
+.mode:hover > .mode-icon-dark {
+  background-image: url("/public/dark-mode-hover.svg");
+}
+
+.mode-icon-light {
+  background-image: url("/public/light-mode.svg");
+}
+
+.mode:hover > .mode-icon-light {
+  background-image: url("/public/light-mode-hover.svg");
+}
+
+.card {
+  width: 25vw;
+  height: 320px;
+}
+
+.video-stats {
+  display: flex;
+  flex-direction: row;
+}
+
+.hover {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 970px) {
+  .card {
+    width: 35vw;
+    height: 290px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .category-btn {
+    margin: 10px;
+  }
+  .card {
+    width: 45vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    width: 40vw;
+    height: 310px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 3px;
+    background-image: url(/public/logo-icon.png);
+  }
+
+  .mode {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
+  .category-btn {
+    padding: 4px 14px;
+  }
+
+  .category-btn-icon {
+    margin-right: 5px;
+  }
+
+  .card {
+    height: 320px;
+  }
+
+  /* .logo-text {
+    display: none;
+  } */
+
+  .scroll-horizontal {
+    overflow: auto !important;
+  }
+
+  .react-player {
+    height: 45vh !important;
+  }
+  .search-bar {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .card {
+    height: 340px;
+  }
+  .video-stats {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 90vw;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .card {
+    height: 310px;
+  }
+}
