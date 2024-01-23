@@ -41,12 +41,10 @@ const ChannelDetail = () => {
             zIndex: 10,
           }}
         />
-        {/* <ChannelCard channelDetail={channelDetail} marginTop="-125px" /> */}
         <Box
           sx={{
             boxShadow: "none",
             borderRadius: "20px",
-            // border: "2px solid var(--color-background)",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -63,7 +61,6 @@ const ChannelDetail = () => {
                 flexDirection: "column",
                 justifyContent: "center",
                 textAlign: "center",
-                // fontWeight: "700",
                 color: "var(--color-text)",
               }}
             >
@@ -78,7 +75,6 @@ const ChannelDetail = () => {
                   height: "180px",
                   width: "180px",
                   mb: 1.5,
-                  // border: "5px solid var(--color-background)",
                 }}
               />
               <Typography variant="h6">

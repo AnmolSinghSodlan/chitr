@@ -13,14 +13,12 @@ const Navbar = ({ light, setLight }) => {
         position: "sticky",
         background: "var(--color-background-primary)",
         top: 0,
-        // marginLeft: { xs: "0", sm: "0rem" },
         justifyContent: "space-between",
         alignItems: "center",
       }}
     >
       <Link to="/" style={{ display: "flex" }}>
         <div className="logo"></div>
-        {/* <div className="logo-text logo-text-light"></div> */}
         <Typography
           variant="h4"
           noWrap
@@ -29,7 +27,6 @@ const Navbar = ({ light, setLight }) => {
             display: { xs: "none", sm: "block" },
             fontFamily: "'Poppins', sans-serif",
             color: "var(--color-text)",
-            // marginLeft: { xs: "0.6rem", md: "0.8rem" },
             fontSize: "1.85rem",
           }}
         >

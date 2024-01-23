@@ -24,51 +24,6 @@ a {
   color: black;
 }
 
-.category-btn {
-  color: var(--color-text);
-}
-
-.category-btn:hover {
-  background: var(--gradient-background);
-  color: var(--color-background-primary);
-}
-
-.category-btn-icon {
-  margin-right: 15px;
-  color: var(--color-gradient);
-}
-
-.category-btn:hover .category-btn-icon {
-  color: var(--color-background-primary);
-}
-
-.react-player {
-  height: 71vh !important;
-  width: 100% !important;
-}
-
-.search-bar {
-  border: none;
-  outline: none;
-}
-
-.category-btn {
-  font-weight: bold;
-  text-transform: capitalize;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  cursor: pointer;
-  background: transparent;
-  outline: none;
-  border: none;
-
-  padding: 7px 18px;
-  margin: 3px 0px;
-  border-radius: 20px;
-  transition: all 0.3s ease;
-}
-
 .logo {
   width: 2rem;
   height: 2rem;
@@ -79,24 +34,10 @@ a {
   background-repeat: no-repeat;
 }
 
-/* .logo-text {
-  height: 2.2rem;
-  width: 6rem;
-  position: absolute;
-  left: 1.4rem;
-  top: 0.8rem;
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+.search-bar {
+  border: none;
+  outline: none;
 }
-
-.logo-text-light {
-  background-image: url("/public/logo-light.png");
-}
-
-.logo-text-dark {
-  background-image: url("/public/logo-dark.png");
-} */
 
 .mode {
   width: 2.8rem;
@@ -131,6 +72,43 @@ a {
 
 .mode:hover > .mode-icon-light {
   background-image: url("/public/light-mode-hover.svg");
+}
+
+.category-btn {
+  font-weight: bold;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+
+  color: var(--color-text);
+  padding: 7px 18px;
+  margin: 3px 0px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+  background: var(--gradient-background);
+  color: var(--color-background-primary);
+}
+
+.category-btn-icon {
+  margin-right: 15px;
+  color: var(--color-gradient);
+}
+
+.category-btn:hover .category-btn-icon {
+  color: var(--color-background-primary);
+}
+
+.react-player {
+  height: 71vh !important;
+  width: 100% !important;
 }
 
 .card {
@@ -172,9 +150,6 @@ a {
   }
 }
 
-@media screen and (max-width: 800px) {
-}
-
 @media screen and (max-width: 650px) {
   .card {
     width: 40vw;
@@ -206,10 +181,6 @@ a {
   .card {
     height: 320px;
   }
-
-  /* .logo-text {
-    display: none;
-  } */
 
   .scroll-horizontal {
     overflow: auto !important;

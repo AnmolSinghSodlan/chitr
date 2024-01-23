@@ -24,12 +24,10 @@ const SearchBar = () => {
       sx={{
         height: { sm: 43, xs: 40 },
         width: "50%",
-        // marginLeft: { sm: "15%", xs: "5%" },
         borderRadius: 20,
         border: "1px solid var(--color-border)",
         backgroundColor: "var(--color-background-secondary)",
         pl: 2.5,
-        // mr: { sm: 1 },
         fontSize: "1.5rem",
         position: "relative",
         display: "flex",

@@ -30,7 +30,6 @@ const ChannelCard = ({ channelDetail, marginTop }) => (
           flexDirection: "column",
           justifyContent: "center",
           textAlign: "center",
-          // fontWeight: "700",
           color: "var(--color-text)",
         }}
       >
@@ -44,7 +43,6 @@ const ChannelCard = ({ channelDetail, marginTop }) => (
             height: "180px",
             width: "180px",
             mb: 1.5,
-            // border: "5px solid var(--color-background)",
           }}
         />
         <Typography variant="h6">
