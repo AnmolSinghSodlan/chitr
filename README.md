@@ -24,7 +24,7 @@ Chitr - Video Streaming Platform is an engaging web application designed to deli
 
 ## Acknowledgements
 
-Special thanks to TMDb API for providing rich and up-to-date movie data, enhancing the features of Movies-N-Pop.
+Special thanks to the YouTube API for its integral role in powering Chitr, enabling dynamic content fetching and enhancing the video streaming experience.
 
 ## Contributing
 
